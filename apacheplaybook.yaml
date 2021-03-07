@@ -1,0 +1,16 @@
+---
+- hosts: webservernode
+  tasks:
+    - name: installing apache using yum module of ansible
+      yum:
+       name: httpd
+       state: present
+    - name: adding the homepage using copy module
+      copy:
+        src: index.html
+        dest: /var/www/html/index.html
+        mode: 655
+    - name: starting the webserver using service module
+      service:
+        name: httpd
+        state: started 
