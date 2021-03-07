@@ -1,2 +1,2 @@
 [targetnodes]
-192.168.2.156 ansiblenode1.myserver.com
+192.168.2.156 ansible_user=root
