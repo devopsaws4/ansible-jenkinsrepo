@@ -1,2 +1,2 @@
-[webservernode]
+[targetnodes]
 192.168.2.156 ansiblenode1.myserver.com
