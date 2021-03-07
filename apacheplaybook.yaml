@@ -1,5 +1,5 @@
 ---
-- hosts: targetnodes
+- hosts: all
   tasks:
     - name: installing apache using yum module of ansible
       yum:
